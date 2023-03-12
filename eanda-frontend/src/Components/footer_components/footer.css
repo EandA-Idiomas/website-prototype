@@ -1,0 +1,38 @@
+footer {
+  background-color: #f8f9fa;
+  padding: 40px 0;
+}
+
+footer p {
+  font-size: 14px;
+  color: #6c757d;
+  margin-bottom: 0;
+}
+
+footer nav {
+  text-align: right;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+footer li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+footer li:first-child {
+  margin-left: 0;
+}
+
+footer a {
+  color: #6c757d;
+  font-size: 14px;
+}
+
+footer a:hover {
+  color: #343a40;
+  text-decoration: none;
+}

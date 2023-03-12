@@ -1,0 +1,22 @@
+.whatsapp-banner {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  background-color: #25d366;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  height: 300px;
+  width: 300px;
+}
+
+.whatsapp-button {
+  height: 300px;
+  width: 300px;
+  margin-right: 10px;
+}

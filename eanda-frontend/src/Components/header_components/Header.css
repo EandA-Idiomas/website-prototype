@@ -1,0 +1,33 @@
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  font-size: 35px;
+  background-color: transparent;
+}
+
+.scrolled {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.logo {
+  margin: 0 2em;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links>li {
+  list-style: none;
+  margin: 0 2em;
+}
