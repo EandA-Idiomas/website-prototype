@@ -1,19 +1,22 @@
 import React from "react";
 import articles from "./articles_components/articles.js";
+import "./articles_components/articles.css";
 
 function Articles() {
   return (
-    <div>
+    <section className="articles-section">
       {
         articles.length > 0 && articles.map((article) => (
           <div key={article.id} className="article-container">
-            <a href={`/${article.title}`}>
+            <a href={`${article.matcher}`}>
+              <img src={article.image} alt={article.title} />
               <h4>{article.title}</h4>
             </a>
-            <p>{article.content}</p>
+            <p>{article.content.substring(0, 150)}</p>
           </div>
-        ))}
-    </div>
+        ))
+      }
+    </section >
   )
 }
 

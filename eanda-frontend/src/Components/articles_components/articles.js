@@ -1,3 +1,6 @@
+import sobre_img from "./3D_Cover.png";
+import metodologia_img from "./3D_Open_Book.png";
+
 const sobre = `Em 2008 Anthony Oladipo criou a E and A Idiomas, focada principalmente em profissionais que precisavam de apoio imediato, não somente na língua inglesa, mas também em adequar seu
 conhecimento técnico a esta segunda língua, para reuniões, conference calls, entre outras
 necessidades que uma escola de inglês padrão não consegue suprir.As aulas são lecionadas online
@@ -22,13 +25,15 @@ const articles = [
     id: 1,
     title: "Sobre a E and A Idiomas",
     content: sobre,
-    src: "",
+    image: sobre_img,
+    matcher: "/about",
   },
   {
     id: 2,
     title: "Metodologia",
     content: metodologia,
-    src: "",
+    image: metodologia_img,
+    matcher: "/methodology",
   },
 ];
 

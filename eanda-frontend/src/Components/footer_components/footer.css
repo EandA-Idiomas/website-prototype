@@ -1,6 +1,8 @@
 footer {
   background-color: #f8f9fa;
   padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 footer p {
@@ -35,4 +37,9 @@ footer a {
 footer a:hover {
   color: #343a40;
   text-decoration: none;
+}
+
+footer a img {
+  width: 120px;
+  height: 100%;
 }

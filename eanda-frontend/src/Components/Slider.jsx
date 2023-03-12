@@ -28,17 +28,17 @@ function Slideshow() {
 
   return (
 
-    <section className="Slideshow">
-      <div className="slide-arrows">
-        <TbArrowBigLeft onClick={prevSlide} className="prev-arrow" />
-        <TbArrowBigRight onClick={nextSlide} className="next-arrow" />
-      </div>
+    <section className="slideshow">
       {
         <div key={currentSlide.id} className="slide-active">
           <img src={currentSlide.image} alt={currentSlide.title} className="slide-image" />
-          <p>{currentSlide.title}</p>
+          {/* <p>{currentSlide.title}</p> */}
         </div>
       }
+      <div className="slide-arrows">
+        <TbArrowBigLeft onClick={prevSlide} className="slide-arrow" />
+        <TbArrowBigRight onClick={nextSlide} className="slide-arrow" />
+      </div>
     </section >
   )
 }

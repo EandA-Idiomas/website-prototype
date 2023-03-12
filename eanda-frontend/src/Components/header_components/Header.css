@@ -4,20 +4,42 @@ header {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  font-size: 35px;
+  font-size: 1.25em;
   background-color: transparent;
-}
-
-.scrolled {
-  background-color: #fff;
-  position: fixed;
-  top: 0;
+  padding: 1rem;
   width: 100%;
   z-index: 1;
 }
 
-.logo {
+.scrolled {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  font-size: 1.25em;
+  background-color: #fff;
+  padding: 0.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.logo-container {
+  margin: 0 1em;
+  display: inline-block;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
   margin: 0 2em;
+  text-decoration: none;
 }
 
 .links {
@@ -25,9 +47,23 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-}
-
-.links>li {
   list-style: none;
   margin: 0 2em;
+  text-decoration: none;
+}
+
+.links>li>a {
+  list-style: none;
+  margin: 0 1em;
+  text-decoration: none;
+  color: #333;
+  padding: 0.25em;
+  margin-left: 10px;
+  transition: background-color 0.2s ease-in-out;
+  border-radius: 0.5em;
+
+}
+
+.links>li>a:hover {
+  background-color: red;
 }

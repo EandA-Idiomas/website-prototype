@@ -9,7 +9,7 @@ function Videos() {
       {videos.map((video) => (
         <div key={video.id} className="video-container">
           <h4>{video.title}</h4>
-          <ReactPlayer url={video.url} />
+          <ReactPlayer controls="true" url={video.url} />
         </div>
       ))}
     </div>

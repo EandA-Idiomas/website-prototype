@@ -4,7 +4,7 @@ import ArticleBody from '../Components/Article__';
 import Footer from "../Components/Footer";
 
 
-function About() {
+function Methodology() {
   return (
     <div>
       <Header />
@@ -14,4 +14,4 @@ function About() {
   );
 }
 
-export default About;
+export default Methodology;
