@@ -12,7 +12,6 @@ function Articles() {
               <img src={article.image} alt={article.title} />
               <h4>{article.title}</h4>
             </a>
-            <p>{article.content.substring(0, 150)}</p>
           </div>
         ))
       }
