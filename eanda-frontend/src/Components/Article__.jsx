@@ -9,19 +9,30 @@ function ArticleBody() {
   const currentUrl = location.pathname;
 
   const article = articles.find((article) => article.matcher === currentUrl);
-  const { title, image, content } = article;
+  // const { title, image, content } = article;
+  if (article === undefined) {
+    console.log("Article is undefined");
+  }
 
   return (
     <div>
-      <body className="article">
-        <h1>{title}</h1>
-        <div className="article-container">
-          <img src={image} alt={title} />
-          <p>{content}</p>
-        </div>
-        <Link to="/">Back to Home Page</Link>
-      </body>
-    </div>
+      {/* <body className="article">
+        {
+          article.id === 1 && (
+            <div className="article-container">
+              {title.forEach((title) => ({
+                content.forEach(content) => (
+              <h3>{title}</h3>
+                                 content.map((content) => (
+              <p>{content}</p>
+              ))
+                }))}
+            </div>
+          )}
+        <img src={image} alt={title} />
+      </body> */}
+      <Link to="/">Back to Home Page</Link>
+    </div >
   );
 }
 
