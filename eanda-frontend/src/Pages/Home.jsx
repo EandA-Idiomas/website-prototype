@@ -15,7 +15,6 @@ function Home() {
       <Videos />
       {/* <WhatsappBanner /> */}
       <Footer />
-      {/* <Articles /> */}
     </div>
   );
 }

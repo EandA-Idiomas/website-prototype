@@ -52,7 +52,8 @@ const articles = [
   {
     id: 1,
     title: ["Sobre Nós", "Nossos Valores"],
-    content: [sobre, profissionalismo, entusiasmo, adaptabilidade, conhecimento],
+    content: [sobre],
+    values: [profissionalismo, entusiasmo, adaptabilidade, conhecimento],
     image: sobre_img,
     matcher: "/about",
   },
