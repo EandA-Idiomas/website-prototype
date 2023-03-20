@@ -1,5 +1,5 @@
 import sobre_img from "./3D_Cover.png";
-import metodologia_img from "./3D_Open_Book.png";
+import metodologia_img from "../methodology_components/3D_Open_Book.png";
 
 const sobre = `Em 2008, Anthony Oladipo criou a E and A Idiomas, focada principalmente em profissionais que
 precisavam de apoio imediato, não somente na língua inglesa, mas também em adequar seu
@@ -51,7 +51,7 @@ Por conseguinte, é notória a necessidade de que todos os colaboradores da E an
 const articles = [
   {
     id: 1,
-    title: ["Sobre Nós", "Nossos Valores"],
+    title: ["Sobre Nós"],
     content: [sobre],
     values: [profissionalismo, entusiasmo, adaptabilidade, conhecimento],
     image: sobre_img,
@@ -59,7 +59,7 @@ const articles = [
   },
   {
     id: 2,
-    title: ["Metodologia", "Plano de Carreira", "Responsabilidades", "Treinamentos e Workshops"],
+    title: ["Nossa Metodologia"],
     content: [metodologia, plano_de_carreira, responsabilidades, treinamentos_e_workshops],
     image: metodologia_img,
     matcher: "/methodology",
