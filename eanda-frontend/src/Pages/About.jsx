@@ -21,12 +21,14 @@ function About() {
               <h1>{title}</h1>
               <p>{content}</p>
             </section>
-            <ul>
+            <section>
               <h1>Nossos Valores</h1>
-              {valores.map((valor) => (
-                <li>{valor}</li>
-              ))}
-            </ul>
+              <ul>
+                {valores.map((valor) => (
+                  <li>{valor}</li>
+                ))}
+              </ul>
+            </section>
             <Link to="/">Voltar à Home</Link>
           </body>
         )
