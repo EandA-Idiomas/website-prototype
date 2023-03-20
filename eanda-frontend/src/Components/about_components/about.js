@@ -12,7 +12,7 @@ possuíam tempo para deslocar-se até uma escola.
 As escolas, até então, ofereciam produtos e cursos já pré-programados, com limitada ou inexistente
 adaptabilidade ao cliente e suas necessidades.
 
-O nome "E and A Idiomas" foi escolhido em homenagem às minhas duas filhas. Seus nomes são:
+O nome "E and A Idiomas" foi escolhido em homenagem às suas filhas. Seus nomes são:
 “Ekundayo” and “Ayotunde”`;
 
 const profissionalismo = `Ética e respeito ao aluno e ao mercado`
