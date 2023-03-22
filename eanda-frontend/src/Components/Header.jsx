@@ -7,11 +7,7 @@ function Header() {
 
   useEffect(() => {
     function handleScroll() {
-      if (window.pageYOffset > 0) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      setIsScrolled(window.pageYOffset > 0 ? true : false);
     }
 
     window.addEventListener('scroll', handleScroll);
