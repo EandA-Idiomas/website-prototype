@@ -1,21 +1,20 @@
-import React, { useState, useEffect, useCallback } from "react";
-import Slides from "./slider_components/Slides";
-import { TbArrowBigRight, TbArrowBigLeft } from "react-icons/tb";
+import React, { useState, useEffect } from "react";
+import SliderData from "./slider_components/SliderData";
+import { BsArrowRight, BsArrowLeft } from "react-icons/bs";
 import "./slider_components/Slider.css";
 
-function Slideshow() {
+function Slider() {
+  const [currentSlide, setCurrentSlide] = useState(SliderData[0]);
+  const length = SliderData.length;
 
-  const [currentSlide, setSlide] = useState(Slides[0]);
-  const length = Slides.length;
-
-  const nextSlide = useCallback(() => {
-    let id = currentSlide.id;
-    id === length ? setSlide(Slides[0]) : setSlide(Slides[id]);
-  }, [currentSlide, length]);
+  const nextSlide = () => {
+    const id = currentSlide.id;
+    id === length ? setCurrentSlide(SliderData[0]) : setCurrentSlide(SliderData[id]);
+  };
 
   const prevSlide = () => {
-    let id = currentSlide.id;
-    id === 1 ? setSlide(Slides[length - 1]) : setSlide(Slides[id - 2]);
+    const id = currentSlide.id;
+    id === 1 ? setCurrentSlide(SliderData[length - 1]) : setCurrentSlide(SliderData[id - 2]);
   };
 
   useEffect(() => {
@@ -24,23 +23,19 @@ function Slideshow() {
     }, 3500);
 
     return () => clearInterval(intervalId);
-  }, [currentSlide, nextSlide]);
+  }, [currentSlide]);
 
   return (
-
-    <section className="slideshow">
-      {
-        <div key={currentSlide.id} className="slide-active">
-          <img src={currentSlide.image} alt={currentSlide.title} className="slide-image" />
-          {/* <p>{currentSlide.title}</p> */}
-        </div>
-      }
-      <div className="slide-arrows">
-        <TbArrowBigLeft onClick={prevSlide} className="slide-arrow" />
-        <TbArrowBigRight onClick={nextSlide} className="slide-arrow" />
+    <section className="slider">
+      <div key={currentSlide.id} className="slider-slide-active">
+        <img src={currentSlide.image} alt={currentSlide.title} className="slider-image" />
       </div>
-    </section >
-  )
+      <div className="slider-arrows">
+        <BsArrowLeft onClick={prevSlide} className="slider-arrow" />
+        <BsArrowRight onClick={nextSlide} className="slider-arrow" />
+      </div>
+    </section>
+  );
 }
 
-export default Slideshow;
+export default Slider;
