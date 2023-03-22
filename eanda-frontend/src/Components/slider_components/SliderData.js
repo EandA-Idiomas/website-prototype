@@ -1,14 +1,16 @@
-const Slides = [
+import image1 from "./image1.jpg";
+import image2 from "./image2.jpg";
+const SliderData = [
   {
     id: 1,
     title: "Slide 1",
-    image: "https://www.shutterstock.com/image-photo/happy-girl-interpreter-headset-translate-260nw-1283704273.jpg",
+    image: image1,
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut aliquam ultricies, nunc nisl aliquam nisl, eget aliquam nisl nisl sit amet nisl. Sed euismod, nunc ut aliquam ultricies, nunc nisl aliquam nisl, eget aliquam nisl nisl sit amet nisl.",
   },
   {
     id: 2,
     title: "Slide 2",
-    image: "https://www.shutterstock.com/shutterstock/photos/1673840887/display_1500/stock-vector-study-english-online-on-laptop-computer-or-education-of-foreign-language-lesson-on-pc-on-desk-table-1673840887.jpg",
+    image: image2,
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut aliquam ultricies, nunc nisl aliquam nisl, eget aliquam nisl nisl sit amet nisl. Sed euismod, nunc ut aliquam ultricies, nunc nisl aliquam nisl, eget aliquam nisl nisl sit amet nisl.",
   },
   {
@@ -31,4 +33,4 @@ const Slides = [
   },
 ];
 
-export default Slides;
+export default SliderData;
