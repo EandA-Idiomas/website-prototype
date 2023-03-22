@@ -18,8 +18,8 @@ function Footer() {
           </li>
         </ul>
       </nav>
-      <>
-        <div className="company-legal-info">
+      <section className="info-container">
+        <div className="legal-info">
           <p>Razão Social: [E and A Idiomas Ltda.]</p>
           <p>CNPJ: [12.374.470/0001-02]</p>
         </div>
@@ -32,7 +32,7 @@ function Footer() {
           <p>Telefone: [Company phone number]</p>
           <p>Email: [Company email address]</p>
         </div>
-      </>
+      </section>
       <div className="copyright">
         <p>&copy; {new Date().getFullYear()} E and A Idiomas. Todos os direitos reservados.</p>
       </div>

@@ -1,45 +1,129 @@
+/* Footer component styles */
+
+/* General styles */
 footer {
-  background-color: #f8f9fa;
-  padding: 40px 0;
+  background-color: #fff;
+  color: #000;
+  padding: 2rem;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
 
-footer p {
-  font-size: 14px;
-  color: #6c757d;
-  margin-bottom: 0;
+/* Logo */
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
 }
 
-footer nav {
-  text-align: right;
+.logo img {
+  width: 150px;
+  height: auto;
 }
 
-footer ul {
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+nav ul {
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-footer li {
+nav li {
   display: inline-block;
-  margin-left: 20px;
+  margin-right: 1rem;
 }
 
-footer li:first-child {
-  margin-left: 0;
-}
-
-footer a {
-  color: #6c757d;
-  font-size: 14px;
-}
-
-footer a:hover {
-  color: #343a40;
+nav a {
+  color: #000;
   text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
 }
 
-footer a img {
-  width: 120px;
-  height: 100%;
+nav a:hover {
+  color: #888;
+}
+
+/* Legal info, address and contact info */
+/* .legal-info,
+.address,
+.contact-info { */
+.info-container {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+}
+
+.legal-info p,
+.address p,
+.contact-info p {
+  margin: 0.5rem 0;
+}
+
+/* Copyright */
+.copyright {
+  color: #888;
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 2rem;
+  z-index: 1;
+  bottom: 0%;
+}
+
+/* Media queries */
+@media only screen and (max-width: 768px) {
+  footer {
+    flex-direction: column;
+  }
+
+  nav {
+    margin-bottom: 1rem;
+  }
+
+  nav li {
+    margin-right: 0.5rem;
+  }
+
+  /* .legal-info,
+  .address,
+  .contact-info { */
+  .info-container {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  /* .legal-info,
+  .address,
+  .contact-info { */
+  .info-container {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
