@@ -7,12 +7,13 @@ function Header() {
 
   useEffect(() => {
     function handleScroll() {
-      setIsScrolled(window.pageYOffset > 0 ? true : false);
+      setIsScrolled(window.pageYOffset > 0);
     }
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
 
   return (
     <header className={isScrolled ? 'scrolled' : 'header'}>
@@ -23,7 +24,7 @@ function Header() {
         <ul className="links">
           <li><a href="/about">Sobre Nós</a></li>
           <li><a href="/services">Serviços</a></li>
-          <li><a href="contact">Contato</a></li>
+          <li><a href="/contact">Contato</a></li>
         </ul>
       </nav>
     </header>
