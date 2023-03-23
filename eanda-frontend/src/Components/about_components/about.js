@@ -1,4 +1,4 @@
-import sobre_img from "../articles_components/3D_Cover.png";
+import sobre_img from "./3D_Cover.png";
 
 const sobre = `Em 2008, Anthony Oladipo criou a E and A Idiomas, focada principalmente em profissionais que
 precisavam de apoio imediato, não somente na língua inglesa, mas também em adequar seu

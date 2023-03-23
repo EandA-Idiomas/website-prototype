@@ -11,6 +11,7 @@ function Articles() {
             <a href={`${article.matcher}`}>
               <img src={article.image} alt={article.title} />
               <h4>{article.title}</h4>
+              <p>{article.content}</p>
             </a>
           </div>
         ))
