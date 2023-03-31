@@ -1,12 +1,24 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import logo from "./header_components/Logo.png";
 import './header_components/Header.css';
 
 function Header() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    function handleScroll() {
+      setIsScrolled(window.pageYOffset > 0);
+    }
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+
   return (
-    <header className="header">
+    <header className={isScrolled ? 'scrolled' : 'header'}>
       <div className="logo-container">
-        <img src={logo} alt="Header Logo" />
+        <img style={{ width: "100px" }} src={logo} alt="Header Logo" />
       </div>
       <nav>
         <ul className="links">

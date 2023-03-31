@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from "../Components/Header";
-// import Slider from "../Components/Slider";
+import Slider from "../Components/Slider";
 // import Articles from "../Components/Articles";
 // import Videos from "../Components/Videos";
 import Footer from "../Components/Footer";
@@ -10,7 +10,7 @@ function Home() {
   return (
     <div>
       <Header />
-      {/* <Slider /> */}
+      <Slider />
       {/* <Articles /> */}
       {/* <Videos /> */}
       {/* <WhatsappBanner /> */}
