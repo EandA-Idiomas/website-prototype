@@ -23,11 +23,13 @@ function Header() {
       <nav>
         <ul className="links">
           <li><a href="/about">Sobre Nós</a></li>
-          <li><a href="/services">Serviços</a></li>
-          <li><a href="/contact">Contato</a></li>
+          <li><a href="/services">O que fazemos</a></li>
           <li><a href="/methodology">Metodologia</a></li>
-          <li><a href="/free-course">Curso gratuito</a></li>
+          <li><a href="/free-course">Curso Gratuito</a></li>
+          <li><a href="/team">Equipe</a></li>
           <li><a href="/testimonials">Depoimentos</a></li>
+          <li><a href="/contact">Contato</a></li>
+
         </ul>
       </nav>
     </header>
