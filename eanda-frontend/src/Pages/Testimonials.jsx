@@ -1,8 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import ReactPlayer from "react-player";
 import testimonials from "../Components/videos_components/testimonials";
+import "../Components/videos_components/testimonials.css";
 
 function Testimonials() {
   if (!testimonials || testimonials.length === 0) {
@@ -20,6 +22,8 @@ function Testimonials() {
             <ReactPlayer controls width={520} url={testimonial?.url} rel={0} />
           </div>
         ))}
+        <Link to="/"> Back to Home Page</Link>
+
       </section>
       <Footer />
     </div>
