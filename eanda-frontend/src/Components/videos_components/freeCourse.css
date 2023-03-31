@@ -1,0 +1,50 @@
+/* Responsive styles */
+@media only screen and (max-width: 767px) {
+  .free-course-main {
+    padding: 0 20px;
+  }
+
+  .free-course-container {
+    margin-bottom: 40px;
+  }
+
+  .react-player {
+    height: 240px;
+    width: 100%;
+  }
+}
+
+/* Desktop styles */
+.free-course-main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.free-course-container {
+  margin: 40px 0;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 60px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin: 20px 0;
+}
+
+.ReactPlayer {
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.ReactPlayer:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
