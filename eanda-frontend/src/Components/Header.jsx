@@ -25,6 +25,9 @@ function Header() {
           <li><a href="/about">Sobre Nós</a></li>
           <li><a href="/services">Serviços</a></li>
           <li><a href="/contact">Contato</a></li>
+          <li><a href="/methodology">Metodologia</a></li>
+          <li><a href="/free-course">Curso gratuito</a></li>
+          <li><a href="/testimonials">Depoimentos</a></li>
         </ul>
       </nav>
     </header>
