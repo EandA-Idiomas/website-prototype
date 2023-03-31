@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
+import ReactPlayer from "react-player";
 import freeCourse from "../Components/videos_components/freeCourse";
 
 function FreeCourse() {
@@ -16,7 +17,7 @@ function FreeCourse() {
         {freeCourse.map((freeCourse) => (
           <div key={freeCourse.id} className="free-course-container">
             <h4>{freeCourse.title}</h4>
-            <p>{freeCourse.text}</p>
+            <ReactPlayer controls width={520} url={freeCourse?.url} rel={0} />
           </div>
         ))}
       </section>
