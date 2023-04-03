@@ -7,6 +7,7 @@ import Services from './Pages/Services';
 import Contact from './Pages/Contact';
 import Testimonials from './Pages/Testimonials';
 import FreeCourse from './Pages/FreeCourse';
+import Team from './Pages/Team';
 import './App.css';
 
 
@@ -21,6 +22,7 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/free-course" element={<FreeCourse />} />
         <Route path="/testimonials" element={<Testimonials />} />
+        <Route exact path="/team" element={<Team />} />
         {/* <Route path="/downloads" element={<FreeMaterials />} /> */}
         {/* <Route path="/downloads/:id" element={<FreeMaterials />} /> */}
       </Routes>
