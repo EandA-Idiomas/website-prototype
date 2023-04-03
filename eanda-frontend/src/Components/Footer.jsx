@@ -29,8 +29,8 @@ function Footer() {
           <p>CEP: 58030-043</p>
         </div>
         <div className="contact-info">
-          <p>Telefone: [Company phone number]</p>
-          <p>Email: [Company email address]</p>
+          <p>Telefone: +55 (11) 99959-3752</p>
+          <p>Email: aldaamorim@eanda.com.br</p>
         </div>
       </section>
       <div className="copyright">
