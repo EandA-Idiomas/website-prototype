@@ -1,6 +1,6 @@
 import React from "react";
 import ReactWhatsapp from "react-whatsapp";
-import { FaWhatsapp } from 'react-icons/fa'
+// import { FaWhatsapp } from 'react-icons/fa'
 
 
 function WhatsappBanner() {
@@ -13,6 +13,7 @@ function WhatsappBanner() {
       >
         <img src="https://via.placeholder.com/500" alt="whatsapp" />
         {/* <FaWhatsapp className="whatsapp-icon" /> */}
+
       </ReactWhatsapp>
     </div >
   );
