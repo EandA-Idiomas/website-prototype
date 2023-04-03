@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
+import WhatsappBanner from "../Components/WhatsappBanner";
 
 
 function Contact() {
@@ -10,13 +11,15 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    window.location.href = `mailto:address@gmail.com?subject=${name}%20-%20Contact%20Form&body=${message}%0D%0A%0D%0AFrom:%20${email}`;
+    window.location.href = `mailto:paulohbfdf@gmail.com?subject=${name}%20-%20Contact%20Form&body=${message}%0D%0A%0D%0AFrom:%20${email}`;
   };
 
   return (
     <div>
       <Header />
-      <h1>Contact Us</h1>
+      <WhatsappBanner />
+      <Footer />
+      {/* <h1>Contact Us</h1>
       <form onSubmit={handleSubmit}>
         <label htmlFor="name">Name:</label>
         <input
@@ -43,10 +46,8 @@ function Contact() {
           onChange={(e) => setMessage(e.target.value)}
           required
         ></textarea>
-
-        <button type="submit">Send</button>
-      </form>
-      <Footer />
+        <button type="submit" onClick={() => handleSubmit}>Send</button>
+      </form> */}
     </div>
   );
 }

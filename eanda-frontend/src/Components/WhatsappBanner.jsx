@@ -8,12 +8,13 @@ function WhatsappBanner() {
     <div className="whatsapp-banner">
       <ReactWhatsapp
         className="whatsapp-button"
-        number="5519983294199"
+        number="551199959-3752"
         message="Olá, gostaria de mais informações sobre os cursos de idiomas."
       >
-        <FaWhatsapp className="whatsapp-icon" />
+        <img src="https://via.placeholder.com/500" alt="whatsapp" />
+        {/* <FaWhatsapp className="whatsapp-icon" /> */}
       </ReactWhatsapp>
-    </div>
+    </div >
   );
 }
 
