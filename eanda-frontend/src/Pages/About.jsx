@@ -3,6 +3,7 @@ import { useLocation, Link } from 'react-router-dom';
 import Header from "../Components/Header";
 import about_content from "../Components/about_components/about.js";
 import Footer from "../Components/Footer";
+import "../Components/about_components/about.css"
 
 
 function About() {
@@ -14,28 +15,37 @@ function About() {
   return (
     <div>
       <Header />
-      {
-        matcher === currentUrl && (
-          <body>
-            <section>
-              <h1>{title}</h1>
-              <p>{content}</p>
-            </section>
-            <section>
-              <h1>Nossos Valores</h1>
-              <ul>
-                {valores.map((valor) => (
-                  <li>{valor}</li>
+      <body>
+        {
+          matcher === currentUrl && (
+            <article>
+              <section>
+                <h1>{title}</h1>
+                {content.map((paragraph) => (
+                  <p key="paragraph">{paragraph}</p>
                 ))}
-              </ul>
-            </section>
-            <Link to="/">Voltar à Home</Link>
-          </body>
-        )
-      }
-      <img src={image} style={{ height: "250px" }} alt="Logo" />
+              </section>
+              <section
+              >
+                <h1>Nossos Valores</h1>
+                <ul>
+                  {valores.map((valor) => (
+                    <li key={valor}>{valor}</li>
+                  ))}
+                </ul>
+                <Link style={{
+                  display: "flex", flexDirection: "column", alignItems: "center"
+                }} to="/">
+                  <img src={image} style={{ height: "250px" }} alt="Logo" />
+                  <figcaption >Voltar à Home</figcaption>
+                </Link>
+              </section>
+            </article>
+          )
+        }
+      </body>
       <Footer />
-    </div>
+    </div >
   );
 }
 
