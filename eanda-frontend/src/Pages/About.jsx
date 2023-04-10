@@ -25,8 +25,7 @@ function About() {
                   <p key="paragraph">{paragraph}</p>
                 ))}
               </section>
-              <section
-              >
+              <section>
                 <h1>Nossos Valores</h1>
                 <ul>
                   {valores.map((valor) => (
@@ -41,8 +40,7 @@ function About() {
                 </Link>
               </section>
             </article>
-          )
-        }
+          )}
       </body>
       <Footer />
     </div >
