@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from "./Pages/Home";
 import About from './Pages/About';
 import Methodology from './Pages/Methodology';
-import Services from './Pages/Services';
+// import Services from './Pages/Services';
 import Contact from './Pages/Contact';
 import Testimonials from './Pages/Testimonials';
 import FreeCourse from './Pages/FreeCourse';
@@ -19,7 +19,7 @@ function App() {
         <Route exact path="/about" element={<About />} />
         <Route exact path="/methodology" element={<Methodology />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/services" element={<Services />} />
+        {/* <Route path="/services" element={<Services />} /> */}
         <Route path="/free-course" element={<FreeCourse />} />
         <Route path="/testimonials" element={<Testimonials />} />
         <Route exact path="/team" element={<Team />} />
