@@ -11,7 +11,7 @@ function Header() {
       <nav>
         <ul className="links">
           <li><a href="/about">Sobre Nós</a></li>
-          <li><a href="/services">O que fazemos</a></li>
+          {/* <li><a href="/services">O que fazemos</a></li> */}
           <li><a href="/methodology">Metodologia</a></li>
           <li><a href="/free-course">Curso Gratuito</a></li>
           <li><a href="/team">Equipe</a></li>
