@@ -14,19 +14,23 @@ function Methodology() {
   return (
     <div>
       <Header />
-      {
-        matcher === currentUrl && (
-          <body>
-            <section className="article-container">
-              <h3>{title}</h3>
-              {content.map((content) => (
-                <p>{content}</p>
-              ))}
-            </section>
-            <Link to="/"> Back to Home Page</Link>
-          </body>
-        )}
-      <img src={image} alt={matcher} />
+      <body>
+        {
+          matcher === currentUrl && (
+            <article>
+              <section className="article-container">
+                <h1>{title}</h1>
+                {content.map((content) => (
+                  <p>{content}</p>
+                ))}
+              </section>
+              <Link to="/">
+                <img src={image} style={{ height: "250px" }} alt={matcher} />
+                <figcaption>Voltar à Home</figcaption>
+              </Link>
+            </article>
+          )}
+      </body>
       <Footer />
     </div >
   );
